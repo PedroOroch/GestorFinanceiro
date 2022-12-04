@@ -1,6 +1,6 @@
 export class Compra {
   id?: number;
-  compranome = ' ';
-  categoria = ' ';
-  preco = ' ';
+  compranome = '';
+  categoria = '';
+  preco: number = 0 ;
 }

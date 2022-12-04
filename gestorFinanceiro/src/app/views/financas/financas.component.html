@@ -1,0 +1,37 @@
+<h3>gestor financeiro</h3>
+
+<input type="text" [(ngModel)]="buscaCompra" name="busca" autocomplete="off">
+
+<table border="1px solid">
+    <thead>
+        <tr>
+            <td>Nome</td>
+            <td>Categoria</td>
+            <td>Preço</td>
+        </tr>
+    </thead>
+    <tbody *ngFor="let compra of listaCompra | filter:buscaCompra">
+        <tr (click)="selecionar(compra)">
+            <td>{{ compra.compranome }}</td>
+            <td>{{ compra.categoria }}</td>
+            <td>{{ compra.preco }}</td>
+            <td (click)="excluir(compra.id)">X</td>
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="novo()">Novo</button>
+
+<div *ngIf="compra">
+
+
+    <label for="">Nome</label>
+    <input type="text" placeholder="Nome" [(ngModel)]="compra.compranome"> <br>
+    <label for="">categoria</label>
+    <input type="text" placeholder="categoria" [(ngModel)]="compra.categoria"> <br>
+    <label for=" ">Preço</label>
+    <input type="number " placeholder="Preço " [(ngModel)]="compra.preco ">
+
+    <button (click)="salvar()">SALVAR</button>
+    <button (click)="cancelar()">CANCELAR</button>
+</div>

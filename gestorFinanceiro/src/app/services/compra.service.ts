@@ -22,7 +22,7 @@ export class CompraService {
   }
 
   excluir(id: number): Observable<any> {
-    return this.http.delete(`"http://localhost:3000/compra/${id}"`);
+    return this.http.delete(`http://localhost:3000/compra/${id}`);
   }
 
   atualizar(compra: Compra): Observable<Compra> {
@@ -30,6 +30,6 @@ export class CompraService {
       return EMPTY;
     }
 
-    return this.http.put<Compra>(`"http://localhost:3000/compra/${compra.id}"`, compra);
+    return this.http.put<Compra>(`http://localhost:3000/compra/${compra.id}`, compra);
   }
 }

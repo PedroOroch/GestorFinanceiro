@@ -1,73 +1,91 @@
 {
-    "posts": [{
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        },
-        {
-            "title": "PC FODA",
-            "author": "Oroch",
-            "id": 2
-        },
-        {
-            "title": "Lana Del Rey",
-            "author": "JuJu Yekia",
-            "id": 3
-        },
-        {
-            "title": "O Gato",
-            "author": "Michael Scott Jackson",
-            "id": 4
-        }
-    ],
-    "usuario": [{
-        "id": 1,
-        "nome": "OrochMuitoTopMesmo",
-        "usersalario": 1500
-    }],
-    "compra": [{
-            "id": 1,
-            "compranome": "Placa de vídeo RTX 3060ti",
-            "categoria": "Peças de Computador",
-            "preco": 3000
-        },
-
-        {
-            "id": 2,
-            "compranome": "Sonic Frontiers",
-            "categoria": "Jogos",
-            "preco": 300
-        },
-        {
-            "id": 3,
-            "compranome": "Bife",
-            "categoria": "Comida",
-            "preco": 50
-        },
-        {
-            "id": 4,
-            "compranome": "MEI",
-            "categoria": "Impostos/Contas",
-            "preco": 65
-        },
-        {
-            "id": 5,
-            "compranome": "CDB",
-            "categoria": "Investimentos",
-            "preco": 500
-        }
-
-    ],
-    "categoria": [{
-        "id": 1,
-        "categoria-nome": "teste"
-    }],
-    "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "PC FODA",
+      "author": "Oroch",
+      "id": 2
+    },
+    {
+      "title": "Lana Del Rey",
+      "author": "JuJu Yekia",
+      "id": 3
+    },
+    {
+      "title": "O Gato",
+      "author": "Michael Scott Jackson",
+      "id": 4
     }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nome": "OrochMuitoTopMesmo",
+      "usersalario": 1500
+    }
+  ],
+  "compra": [
+    {
+      "id": 1,
+      "compranome": "Placa de vídeo RTX 3060ti",
+      "categoria": "Peças de Computador",
+      "preco": 3000
+    },
+    {
+      "id": 2,
+      "compranome": "Sonic Frontiers",
+      "categoria": "Jogos",
+      "preco": 300
+    },
+    {
+      "id": 3,
+      "compranome": "Bife",
+      "categoria": "Comida",
+      "preco": 50
+    },
+    {
+      "id": 4,
+      "compranome": "MEI",
+      "categoria": "Impostos/Contas",
+      "preco": 65
+    },
+    {
+      "id": 5,
+      "compranome": "CDB",
+      "categoria": "Investimentos",
+      "preco": 500
+    },
+    {
+      "compranome": "Pato",
+      "categoria": "Limpeza",
+      "preco": "24",
+      "id": 7
+    },
+    {
+      "compranome": "Corsa",
+      "categoria": "Carro",
+      "preco": "20000",
+      "id": 8
+    }
+  ],
+  "categoria": [
+    {
+      "id": 1,
+      "categoria-nome": "teste"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
