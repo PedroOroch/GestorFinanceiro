@@ -1,1 +1,13 @@
-<p>usuario works!</p>
+<div *ngFor="let user of mostrarUsuario">
+    <span>{{ user.nome }} </span>
+    <span>{{ user.usersalario }}</span>
+
+
+</div>
+
+<div *ngIf="usuario">
+    <input type="text" placeholder="Nome" [(ngModel)]="usuario.nome">
+    <input type="number" placeholder="Salário" [(ngModel)]="usuario.usersalario">
+
+
+</div>

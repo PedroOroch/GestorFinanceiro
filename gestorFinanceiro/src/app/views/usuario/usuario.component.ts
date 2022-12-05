@@ -12,6 +12,7 @@ export class UsuarioComponent implements OnInit {
   mostrarUsuario: Usuario[] = [];
   usuario?: Usuario;
   isEditn = false;
+  delUser = false;
 
   constructor( private usuarioService: UsuarioService ) { }
 
@@ -55,6 +56,27 @@ export class UsuarioComponent implements OnInit {
         this.cancel();
       });
     }
+  }
+
+  deleteUser(id?: number)
+  {
+    if(!id) {
+      return;
+    }
+
+    const RESPOSTA = confirm('Esse cliente será excluído ok?');
+
+    if (RESPOSTA) {
+      this.usuarioService.deleteUsuario(id).subscribe(( ) => {
+        this.showUser()
+      });
+    }
+  }
+
+  selectUser(usuario: Usuario)
+  {
+    this.usuario = usuario;
+    this.isEditn = true;
   }
 
 }
