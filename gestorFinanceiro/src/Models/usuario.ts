@@ -1,6 +1,6 @@
 export class Usuario {
   id?: number;
   nome = ' ';
-  usersalario = ' ';
+  usersalario = 0;
 
 }

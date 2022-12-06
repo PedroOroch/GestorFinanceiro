@@ -23,9 +23,9 @@
   ],
   "usuario": [
     {
-      "id": 1,
-      "nome": "OrochMuitoTopMesmo",
-      "usersalario": 1500
+      "nome": " dsadasd",
+      "usersalario": "121312",
+      "id": 1
     }
   ],
   "compra": [
@@ -70,6 +70,12 @@
       "categoria": "Carro",
       "preco": "20000",
       "id": 8
+    },
+    {
+      "compranome": "Processador Ryzen 7 5700x",
+      "categoria": "Peças de Computador",
+      "preco": "1800",
+      "id": 9
     }
   ],
   "categoria": [

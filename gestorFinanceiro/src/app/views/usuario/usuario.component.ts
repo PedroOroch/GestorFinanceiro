@@ -12,12 +12,14 @@ export class UsuarioComponent implements OnInit {
   mostrarUsuario: Usuario[] = [];
   usuario?: Usuario;
   isEditn = false;
-  delUser = false;
+  addUsuario = 'addUser';
+  nintendoSwitch = true;
 
   constructor( private usuarioService: UsuarioService ) { }
 
   ngOnInit(): void {
     this.showUser();
+    this.nintendoSwitch = false;
   }
 
   showUser()
@@ -49,11 +51,13 @@ export class UsuarioComponent implements OnInit {
       this.usuarioService.criaUsuario(this.usuario).subscribe(usuario => {
         this.showUser();
         this.cancel();
+        this.nintendoSwitch = false;
       })
     } else {
       this.usuarioService.editaUsuario(this.usuario).subscribe(usuario => {
         this.showUser()
         this.cancel();
+        this.nintendoSwitch = false;
       });
     }
   }
@@ -64,11 +68,12 @@ export class UsuarioComponent implements OnInit {
       return;
     }
 
-    const RESPOSTA = confirm('Esse cliente será excluído ok?');
+    const RESPOSTA = confirm('Esse usuário será excluído ok?');
 
     if (RESPOSTA) {
       this.usuarioService.deleteUsuario(id).subscribe(( ) => {
-        this.showUser()
+        this.showUser();
+        this.nintendoSwitch = true;
       });
     }
   }
@@ -78,5 +83,6 @@ export class UsuarioComponent implements OnInit {
     this.usuario = usuario;
     this.isEditn = true;
   }
+
 
 }

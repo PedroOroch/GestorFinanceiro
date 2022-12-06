@@ -1,13 +1,25 @@
-<div *ngFor="let user of mostrarUsuario">
-    <span>{{ user.nome }} </span>
-    <span>{{ user.usersalario }}</span>
+<div *ngFor="let usuario of mostrarUsuario">
+    <span>{{usuario.nome }} </span>
+    <span>{{usuario.usersalario }}</span>
+    <button (click)="selectUser(usuario)">EDITAR</button>
+    <button (click)="deleteUser(usuario.id)">EXCLUIR</button>
 
 
 </div>
 
+<div *ngIf="nintendoSwitch">
+    <button (click)="newUser()">NOVO USUÁRIO</button>
+</div>
+
+
 <div *ngIf="usuario">
-    <input type="text" placeholder="Nome" [(ngModel)]="usuario.nome">
-    <input type="number" placeholder="Salário" [(ngModel)]="usuario.usersalario">
 
 
+    <label for=" ">Nome</label>
+    <input type="text" placeholder="Nome " [(ngModel)]="usuario.nome "> <br>
+    <label for=" ">categoria</label>
+    <input type="text" placeholder="Salário " [(ngModel)]="usuario.usersalario "><br>
+
+    <button (click)="saveUser() ">SALVAR</button>
+    <button (click)="cancel() ">CANCELAR</button>
 </div>
