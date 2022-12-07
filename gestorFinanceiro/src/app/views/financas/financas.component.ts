@@ -86,22 +86,22 @@ export class FinancasComponent implements OnInit {
   }
 
 
- totalCompra()
- {
+//  totalCompra()
+//  {
 
 
-  for(const i = 0; i < this.listaCompra.length; i++); {
-    this.sum += this.listaCompra[i].preco;
-  }
+  // for(const i = 0; i < this.listaCompra.length; i++); {
+  //   this.sum += this.listaCompra[i].preco;
+  // }
 
-  return this.sum;
+  // return this.sum;
 
   // const TOTAL = this.listaCompra.reduce<number>((sum, compra) => {
   //   return sum + compra.preco;
   // }, 0);
 
   // console.log(TOTAL);
- }
+//  }
 
 
 
